@@ -1,4 +1,4 @@
-package com.pocketpal
+package com.starcompanion
 
 import android.app.Application
 import android.system.Os
@@ -12,12 +12,12 @@ import com.facebook.react.defaults.DefaultReactHost.getDefaultReactHost
 import com.facebook.react.defaults.DefaultReactNativeHost
 import com.facebook.react.soloader.OpenSourceMergedSoMapping
 import com.facebook.soloader.SoLoader
-import com.pocketpal.KeepAwakePackage
-import com.pocketpal.HardwareInfoPackage
-import com.pocketpal.StorefrontPackage
-import com.pocketpal.AuthSessionPackage
-import com.pocketpal.ExternalContentLinkPackage
-import com.pocketpal.download.DownloadPackage
+import com.starcompanion.KeepAwakePackage
+import com.starcompanion.HardwareInfoPackage
+import com.starcompanion.StorefrontPackage
+import com.starcompanion.AuthSessionPackage
+import com.starcompanion.ExternalContentLinkPackage
+import com.starcompanion.download.DownloadPackage
 
 class MainApplication : Application(), ReactApplication {
 
