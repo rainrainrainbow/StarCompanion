@@ -1,4 +1,4 @@
-package com.pocketpal.download
+package com.starcompanion.download
 
 import okhttp3.MediaType
 import okhttp3.ResponseBody
