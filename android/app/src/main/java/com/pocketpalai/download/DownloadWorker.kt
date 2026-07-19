@@ -1,8 +1,8 @@
-package com.pocketpal.download
+package com.starcompanion.download
 
 import android.content.Context
 import android.util.Log
-import com.pocketpal.BuildConfig
+import com.starcompanion.BuildConfig
 import androidx.work.*
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
