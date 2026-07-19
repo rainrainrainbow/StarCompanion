@@ -1,4 +1,4 @@
-package com.pocketpal.download
+package com.starcompanion.download
 
 import androidx.room.*
 import kotlinx.coroutines.flow.Flow
