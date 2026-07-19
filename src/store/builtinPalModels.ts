@@ -81,3 +81,85 @@ export const LOOKIE_DEFAULT_MODEL: Model = {
   defaultProjectionModel:
     'ggml-org/SmolVLM-500M-Instruct-GGUF/mmproj-SmolVLM-500M-Instruct-Q8_0.gguf',
 };
+
+
+// 星璃推荐中文模型 — Qwen2.5 系列
+import {defaultCompletionParams} from '../utils/completionSettingsVersions';
+import {chatTemplates} from '../utils/chat';
+
+export const QWEN25_0_5B: Model = {
+  id: 'Qwen/Qwen2.5-0.5B-Instruct-GGUF/qwen2.5-0.5b-instruct-q4_k_m.gguf',
+  author: 'Qwen',
+  repo: 'Qwen2.5-0.5B-Instruct-GGUF',
+  name: 'Qwen2.5-0.5B (Q4_K_M)',
+  type: 'Qwen2.5',
+  capabilities: ['chat'],
+  visionEnabled: false,
+  size: 397000000,
+  params: 494000000,
+  isDownloaded: false,
+  downloadUrl: 'https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct-GGUF/resolve/main/qwen2.5-0.5b-instruct-q4_k_m.gguf',
+  hfUrl: 'https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct-GGUF',
+  progress: 0,
+  filename: 'qwen2.5-0.5b-instruct-q4_k_m.gguf',
+  isLocal: false,
+  origin: ModelOrigin.HF,
+  modelType: ModelType.LLM,
+  defaultChatTemplate: chatTemplates.qwen,
+  chatTemplate: chatTemplates.qwen,
+  defaultCompletionSettings: {
+    ...defaultCompletionParams,
+    n_predict: 2048,
+    temperature: 0.7,
+  },
+  completionSettings: {
+    ...defaultCompletionParams,
+    n_predict: 2048,
+    temperature: 0.7,
+  },
+  defaultStopWords: ['<|endoftext|>', '<|im_end|>'],
+  stopWords: ['<|endoftext|>', '<|im_end|>'],
+  supportsMultimodal: false,
+};
+
+export const QWEN25_1_5B: Model = {
+  id: 'Qwen/Qwen2.5-1.5B-Instruct-GGUF/qwen2.5-1.5b-instruct-q4_k_m.gguf',
+  author: 'Qwen',
+  repo: 'Qwen2.5-1.5B-Instruct-GGUF',
+  name: 'Qwen2.5-1.5B (Q4_K_M)',
+  type: 'Qwen2.5',
+  capabilities: ['chat'],
+  visionEnabled: false,
+  size: 985000000,
+  params: 1540000000,
+  isDownloaded: false,
+  downloadUrl: 'https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct-GGUF/resolve/main/qwen2.5-1.5b-instruct-q4_k_m.gguf',
+  hfUrl: 'https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct-GGUF',
+  progress: 0,
+  filename: 'qwen2.5-1.5b-instruct-q4_k_m.gguf',
+  isLocal: false,
+  origin: ModelOrigin.HF,
+  modelType: ModelType.LLM,
+  defaultChatTemplate: chatTemplates.qwen,
+  chatTemplate: chatTemplates.qwen,
+  defaultCompletionSettings: {
+    ...defaultCompletionParams,
+    n_predict: 4096,
+    temperature: 0.7,
+  },
+  completionSettings: {
+    ...defaultCompletionParams,
+    n_predict: 4096,
+    temperature: 0.7,
+  },
+  defaultStopWords: ['<|endoftext|>', '<|im_end|>'],
+  stopWords: ['<|endoftext|>', '<|im_end|>'],
+  supportsMultimodal: false,
+};
+
+// 推荐模型列表
+export const RECOMMENDED_MODELS: Model[] = [
+  QWEN25_0_5B,
+  QWEN25_1_5B,
+  LOOKIE_DEFAULT_MODEL,
+];
