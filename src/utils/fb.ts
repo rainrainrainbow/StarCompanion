@@ -1,8 +1,6 @@
 import {getApp} from '@react-native-firebase/app';
-import {
-  ReactNativeFirebaseAppCheckProvider,
-  initializeAppCheck as fbInitializeAppCheck,
-} from '@react-native-firebase/app-check';
+import ReactNativeFirebaseAppCheckProvider from '@react-native-firebase/app-check';
+import {initializeAppCheck as fbInitializeAppCheck} from '@react-native-firebase/app-check';
 
 import {APPCHECK_DEBUG_TOKEN_ANDROID, APPCHECK_DEBUG_TOKEN_IOS} from '@env';
 
