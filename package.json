@@ -60,8 +60,7 @@
     "@react-native-masked-view/masked-view": "^0.3.2",
     "@supabase/supabase-js": "^2.49.0",
     "@react-native-google-signin/google-signin": "^13.1.0",
-    "expr-eval": "^2.0.2",
-    "@pocketpalai/react-native-speech": "^1.0.0"
+    "expr-eval": "^2.0.2"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",
