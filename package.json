@@ -54,7 +54,7 @@
     "@react-native-firebase/app": "^21.0.0",
     "@react-native-firebase/app-check": "^21.0.0",
     "mustache": "^4.2.0",
-    "@flyerhq/react-native-link-preview": "^1.7.0"
+    "@flyerhq/react-native-link-preview": "^1.6.0"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",
