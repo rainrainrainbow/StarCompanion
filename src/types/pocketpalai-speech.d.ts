@@ -51,6 +51,7 @@ declare module '@pocketpalai/react-native-speech' {
     French = 'fr',
     German = 'de',
     Spanish = 'es',
+    NA = 'na',
   }
 
   export function speak(options: TTSOptions): Promise<void>;
