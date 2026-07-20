@@ -86,7 +86,7 @@ jobs:
       - name: Set up Android Keystore
         working-directory: android
         run: |
-          echo "${{ secrets.ANDROID_KEYSTORE_BASE64 }}" | base64 --decode > app/pocketpal-release-key.keystore
+          echo "${{ secrets.ANDROID_KEYSTORE_BASE64 }}" | base64 --decode > app/starcompanion-release-key.keystore
 
       # Step 9: Authenticate to Google Cloud
       - name: Authenticate to Google Cloud
@@ -109,7 +109,7 @@ jobs:
           PALSHUB_API_BASE_URL=${{ vars.PALSHUB_API_BASE_URL }}
 
           # App Configuration
-          APP_URL=pocketpal://app
+          APP_URL=starcompanion://app
 
           # Feature Flags (true/false)
           ENABLE_PALSHUB_INTEGRATION=true
@@ -217,7 +217,7 @@ jobs:
           PALSHUB_API_BASE_URL=${{ vars.PALSHUB_API_BASE_URL }}
 
           # App Configuration
-          APP_URL=pocketpal://app
+          APP_URL=starcompanion://app
 
           # Feature Flags (true/false)
           ENABLE_PALSHUB_INTEGRATION=true
