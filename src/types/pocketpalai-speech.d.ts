@@ -53,7 +53,9 @@ declare module '@pocketpalai/react-native-speech' {
   export function initialize(options?: Record<string, unknown>): Promise<void>;
   export function release(): Promise<void>;
   export function getAvailableVoices(): Promise<TTSVoice[]>;
-  export function createSpeechStream(options: SpeechStreamOptions): SpeechStreamResult;
+  export function createSpeechStream(
+    options: SpeechStreamOptions,
+  ): SpeechStreamResult;
   export function setOnDone(callback: () => void): void;
   export function setOnError(callback: (error: Error) => void): void;
 
