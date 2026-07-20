@@ -54,7 +54,14 @@
     "@react-native-firebase/app": "^21.0.0",
     "@react-native-firebase/app-check": "^21.0.0",
     "mustache": "^4.2.0",
-    "@flyerhq/react-native-link-preview": "^1.6.0"
+    "@flyerhq/react-native-link-preview": "^1.6.0",
+    "react-native-keychain": "^9.2.0",
+    "react-native-linear-gradient": "^2.8.3",
+    "@react-native-masked-view/masked-view": "^0.3.2",
+    "@supabase/supabase-js": "^2.49.0",
+    "@react-native-google-signin/google-signin": "^13.1.0",
+    "expr-eval": "^2.0.2",
+    "@pocketpalai/react-native-speech": "^1.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",
@@ -72,9 +79,12 @@
     "eslint": "^8.57.0",
     "eslint-plugin-prettier": "^5.5.4",
     "eslint-config-prettier": "^10.1.8",
-    "babel-plugin-transform-define": "^1.0.0",
+    "babel-plugin-transform-define": "^2.1.4",
     "@babel/plugin-proposal-decorators": "^7.25.9",
-    "@babel/plugin-transform-export-namespace-from": "^7.25.9"
+    "@babel/plugin-transform-export-namespace-from": "^7.25.9",
+    "@testing-library/react-native": "^12.9.0",
+    "@testing-library/react-hooks": "^8.0.1",
+    "@nozbe/watermelondb": "^0.27.0"
   },
   "engines": {
     "node": ">=22.21.0"
