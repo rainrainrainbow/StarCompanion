@@ -11,6 +11,7 @@ declare module '@pocketpalai/react-native-speech' {
     id: string;
     name: string;
     language?: string;
+    identifier?: string;
   }
 
   export interface SpeechStreamOptions {
@@ -24,12 +25,18 @@ declare module '@pocketpalai/react-native-speech' {
   export interface SpeechStreamResult {
     id: string;
     cancel: () => void;
+    append: (text: string) => void;
+    finalize: () => void;
     onData: (callback: (data: string) => void) => void;
     onDone: (callback: () => void) => void;
     onError: (callback: (error: Error) => void) => void;
   }
 
   export class TTSEngine {
+    static KITTEN: 'kitten';
+    static KOKORO: 'kokoro';
+    static SUPERTONIC: 'supertonic';
+    static OS_NATIVE: 'os_native';
     constructor(options?: Record<string, unknown>);
     speak(text: string, options?: Record<string, unknown>): Promise<void>;
     stop(): void;
