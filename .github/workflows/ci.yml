@@ -149,7 +149,7 @@ jobs:
               "client_info": {
                 "mobilesdk_app_id": "1:000000000000:android:0000000000000000",
                 "android_client_info": {
-                  "package_name": "com.pocketpalai"
+                  "package_name": "com.starcompanion"
                 }
               },
               "api_key": [{
@@ -170,7 +170,7 @@ jobs:
           PALSHUB_API_BASE_URL=https://dummy-palshub-api.com
 
           # App Configuration
-          APP_URL=pocketpal://app
+          APP_URL=starcompanion://app
 
           # Feature Flags (true/false)
           ENABLE_PALSHUB_INTEGRATION=true
@@ -188,8 +188,8 @@ jobs:
           # Generate a dummy keystore for CI builds
           keytool -genkeypair -v \
             -storetype PKCS12 \
-            -keystore pocketpal-release-key.keystore \
-            -alias pocketpal_key_alias \
+            -keystore starcompanion-release-key.keystore \
+            -alias starcompanion_key_alias \
             -keyalg RSA \
             -keysize 2048 \
             -validity 10000 \
@@ -295,7 +295,7 @@ jobs:
           PALSHUB_API_BASE_URL=https://dummy-palshub-api.com
 
           # App Configuration
-          APP_URL=pocketpal://app
+          APP_URL=starcompanion://app
 
           # Feature Flags (true/false)
           ENABLE_PALSHUB_INTEGRATION=true
@@ -325,7 +325,7 @@ jobs:
             <key>PLIST_VERSION</key>
             <string>1</string>
             <key>BUNDLE_ID</key>
-            <string>ai.pocketpal</string>
+            <string>com.starcompanion</string>
             <key>PROJECT_ID</key>
             <string>dummy-project-for-ci</string>
             <key>STORAGE_BUCKET</key>
@@ -363,8 +363,8 @@ jobs:
           # List available simulators for debugging
           xcrun simctl list devices available
           xcodebuild \
-            -workspace PocketPal.xcworkspace \
-            -scheme PocketPal \
+            -workspace StarCompanion.xcworkspace \
+            -scheme StarCompanion \
             -configuration Release \
             -sdk iphonesimulator \
             -destination 'generic/platform=iOS Simulator' \
