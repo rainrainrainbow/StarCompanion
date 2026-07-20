@@ -20,6 +20,8 @@ declare module '@pocketpalai/react-native-speech' {
     language?: string;
     speed?: number;
     pitch?: number;
+    inferenceSteps?: number;
+    targetChars?: number;
   }
 
   export interface SpeechStreamResult {
@@ -43,16 +45,7 @@ declare module '@pocketpalai/react-native-speech' {
     release(): void;
   }
 
-  export enum SupertonicLanguage {
-    English = 'en',
-    Chinese = 'zh',
-    Japanese = 'ja',
-    Korean = 'ko',
-    French = 'fr',
-    German = 'de',
-    Spanish = 'es',
-    NA = 'na',
-  }
+  export type SupertonicLanguage = 'en' | 'zh' | 'ja' | 'ko' | 'fr' | 'de' | 'es' | 'na';
 
   export function speak(options: TTSOptions): Promise<void>;
   export function stop(): void;
