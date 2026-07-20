@@ -48,7 +48,7 @@
     "zod": "^4.1.12",
     "dayjs": "^1.11.18",
     "date-fns": "^4.1.0",
-    "chat-formatter": "^1.0.0",
+    "chat-formatter": "^0.3.4",
     "axios": "^1.7.9",
     "react-native-share": "^10.0.2",
     "@react-native-firebase/app": "^21.0.0",
