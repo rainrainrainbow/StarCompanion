@@ -10,7 +10,9 @@
     "build:android:release": "cd android && ./gradlew bundleRelease && cd ..",
     "ios": "react-native run-ios --simulator=\"iPhone 16 Pro\"",
     "start": "react-native start",
-    "test": "jest"
+    "test": "jest",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "llama.rn": "0.12.4",
@@ -57,7 +59,8 @@
     "typescript": "5.0.4",
     "jest": "^29.6.3",
     "prettier": "3.6.2",
-    "husky": "^9.1.7"
+    "husky": "^9.1.7",
+    "eslint": "^8.57.0"
   },
   "engines": {
     "node": ">=22.21.0"
